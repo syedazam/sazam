@@ -2,68 +2,248 @@
 <html lang="en">
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Syed Azam - Portfolio</title>
-    <meta name="description" content="" />
-    <meta name="author" content="Syed Azam" />
-    <meta name="keywords" content="UI Developer online Portfolio" />
-    <meta name="viewport" content="width=device-width, minimum-scale=1.0" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Varela" rel="stylesheet" />
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>UX Portfolio - Syed Azam</title>
+    <meta content="Syed is a UX desinger" name="Syed is a based designer, who loves to tell a good story. He does digital design, brand design, and art direction." />
+    <meta content="designer" name="UX Designer, UI Developer, UX Designer Portfolio" />
+    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KCN0FQ1NRG"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
-    <link rel="apple-touch-icon" sizes="144x144" href="assets/img/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png" />
-    <link rel="icon" sizes="16x16" href="assets/img/favicon.ico" />
-    <link rel="manifest" href="assets/img/manifest.json" />
-    <link rel="mask-icon" href="assets/img/safari-pinned-tab.svg" color="#5bbad5" />
-    <meta name="theme-color" content="#ffffff" />
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
 
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+        gtag('config', 'G-KCN0FQ1NRG');
+    </script>
 </head>
 
 <body>
-    <div id="top" class="hero background-overlay">
-        <div class="hero-content">
-            <h1>I am Syed Azam</h1>
-            <p class="hero-job"><span>I'M A CREATIVE UI~UX DEVELOPER</span></p>
-            <p class="hero-job-desc">
-                I STAND ON A SWEET SPOT WHERE DESIGN &amp; CODE INTERSECTS.
-            </p>
-            <p>My <a href="assets/cv/Syed_Azam_UI.pdf" target="_blank">CV</a></p>
-        </div>
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top">
+        <div class="container d-flex align-items-center justify-content-between">
+            <h1 class="logo">
+                <a href="index.html">
+                    <img src="assets/img/logo.svg" alt="" class="img-fluid" /> UX~UI</a>
+            </h1>
+            <!-- Uncomment below if you prefer to use an image logo -->
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+                    <li><a class="nav-link scrollto" href="#about">About</a></li>
+                    <li><a class="nav-link scrollto" href="#work">Work</a></li>
 
-        <div class="hero-arrow page-scroll home-arrow-down">
-            <a class="" href="#intro"><i class="fa fa-angle-double-down" aria-hidden="true"></i
-        ></a>
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav>
+            <!-- .navbar -->
+        </div>
+    </header>
+    <!-- End Header -->
+    <!-- ======= Hero Section ======= -->
+    <div id="hero" class="hero route bg-image" style="background-image: url(assets/img/hero-bg.jpg)">
+        <div class="overlay-itro"></div>
+        <div class="hero-content display-table">
+            <div class="table-cell">
+                <div class="container">
+                    <!--<p class="display-6 color-d">Hello, world!</p>-->
+                    <h1 class="hero-title mb-4">I'm Syed Azam</h1>
+                    <p class="hero-subtitle">
+                        <span class="typed" data-typed-items="Designer, Developer, Photographer"></span>
+                    </p>
+                    <!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p> -->
+                </div>
+            </div>
         </div>
     </div>
+    <!-- End Hero Section -->
+    <main id="main">
+        <!-- ======= About Section ======= -->
+        <section id="about" class="about-mf sect-pt4 route">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="box-shadow-full">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="row">
+                                        <div class="col-sm-6 col-md-5">
+                                            <div class="about-img">
+                                                <img src="assets/img/testimonial-2.jpg" class="img-fluid rounded b-shadow-a" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-md-7">
+                                            <div class="about-info">
+                                                <p>
+                                                    <span class="title-s">Name: </span>
+                                                    <span>Syed Azam</span>
+                                                </p>
+                                                <p>
+                                                    <span class="title-s">Profile: </span>
+                                                    <span>UX/UI Designer</span>
+                                                </p>
+                                                <p>
+                                                    <span class="title-s">Email: </span>
+                                                    <span>mailtosyedazam@gmail.com</span>
+                                                </p>
+                                                <p>
+                                                    <span class="title-s">Phone: </span>
+                                                    <span>+91 98800 31436</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-mf">
+                                        <p class="title-s">Skill</p>
+                                        <span>HTML</span> <span class="pull-right">95%</span>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <span>CSS3</span> <span class="pull-right">90%</span>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <span>Design</span> <span class="pull-right">90%</span>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <span>JAVASCRIPT</span>
+                                        <span class="pull-right">70%</span>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="about-me pt-4 pt-md-0">
+                                        <div class="title-box-2">
+                                            <h5 class="title-left">About me</h5>
+                                        </div>
+                                        <p class="lead">
+                                            I’m a UX/UI designer based in bangalore, India with experience in delivering end-to-end UX/UI desgin for software products. Designing With Passion While Exploring The World !!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End About Section -->
+        <!-- ======= Portfolio Section ======= -->
+        <section id="work" class="portfolio-mf sect-pt4 route">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="title-box text-center">
+                            <h3 class="title-a">Portfolio</h3>
+                            <p class="subtitle-a">
+                                Coming Soon..
+                            </p>
+                            <div class="line-mf"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="row">
+                    <div class="col-md-4">
+                        <div class="work-box">
+                            <a href="assets/img/work-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                                <div class="work-img">
+                                    <img src="assets/img/work-1.jpg" alt="" class="img-fluid" />
+                                </div>
+                            </a>
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <!-- jQuery core js | Do not Delete -->
-    <script src="assets/js/jquery.min.js"></script>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="work-box">
+                            <a href="assets/img/work-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                                <div class="work-img">
+                                    <img src="assets/img/work-2.jpg" alt="" class="img-fluid" />
+                                </div>
+                            </a>
 
-    <!-- Bootstrap core js | Do not Delete -->
-    <script src="assets/js/bootstrap.min.js"></script>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="work-box">
+                            <a href="assets/img/work-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                                <div class="work-img">
+                                    <img src="assets/img/work-3.jpg" alt="" class="img-fluid" />
+                                </div>
+                            </a>
 
-    <!-- Bootstrap progressbar JS -->
-    <script src="assets/js/bootstrap-progressbar.min.js"></script>
-    <script src="assets/js/jquery.countTo.min.js"></script>
-    <script src="assets/js/jquery.easing.min.js"></script>
-    <script src="assets/js/jquery.shuffle.min.js"></script>
-    <script src="assets/js/slick.min.js"></script>
-    <script src="assets/js/touchswipe.min.js"></script>
-    <script src="assets/js/script.js"></script>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="work-box">
+                            <a href="assets/img/work-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                                <div class="work-img">
+                                    <img src="assets/img/work-4.jpg" alt="" class="img-fluid" />
+                                </div>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="work-box">
+                            <a href="assets/img/work-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                                <div class="work-img">
+                                    <img src="assets/img/work-5.jpg" alt="" class="img-fluid" />
+                                </div>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="work-box">
+                            <a href="assets/img/work-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                                <div class="work-img">
+                                    <img src="assets/img/work-6.jpg" alt="" class="img-fluid" />
+                                </div>
+                            </a>
+                        </div>
+                    </div> -->
+            </div>
+            </div>
+        </section>
+    </main>
+    <!-- End #main -->
+    <!-- ======= Footer ======= -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="copyright-box">
+                        <p class="copyright">
+                            &copy; Copyright <strong>theuideveloper</strong>. All Rights Reserved
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div id="preloader"></div>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i
+         ></a>
+    <script src="assets/vendor/purecounter/purecounter.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/typed.js/typed.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/js/main.js"></script>
+
 </body>
-
-</html>
+</html

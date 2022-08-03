@@ -576,7 +576,7 @@ a:hover {
     bottom: -6px;
     left: 0;
     width: 0;
-    background-color: #fff;
+    background-color: #0078ff;
     visibility: hidden;
     transition: all 0.3s ease-in-out 0s;
 }
@@ -1535,4 +1535,19 @@ footer .credits {
 
 footer .credits a {
     color: #fff;
+}
+
+.glow {
+    color: #fff;
+    text-align: center;
+    animation: glow 0.5s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+    from {
+        text-shadow: 0 0 10px #000, 0 0 20px #000, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    to {
+        text-shadow: 0 0 20px #000, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
 }

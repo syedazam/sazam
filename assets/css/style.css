@@ -805,7 +805,12 @@ a:hover {
 .hero .hero-title {
     color: #fff;
     font-weight: 600;
-    font-size: 3rem;
+    /* font-size: 3rem;
+    background: linear-gradient(243.49deg, #ff8500 8.88%, #00ffbb 87.64%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent; */
 }
 
 @media (min-width: 768px) {
@@ -817,6 +822,12 @@ a:hover {
 .hero .hero-subtitle {
     font-size: 1.5rem;
     font-weight: 600;
+    display: inline-block;
+    background: linear-gradient(243.49deg, #00faff 8.88%, #00ff85 87.64%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
 }
 
 @media (min-width: 768px) {

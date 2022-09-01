@@ -54,12 +54,14 @@
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5TF332J"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
+    <div class="ball"></div>
+    <progress max="100" value="0"></progress>
     <!-- ======= Header ======= -->
     <header id="header" class="fixed-top">
         <div class="container d-flex align-items-center justify-content-between">
             <h1 class="logo glow">
                 <a href="index.html">
-                    <img src="assets/img/logo.svg" alt="" class="img-fluid" /> UX~UI</a>
+                    <img src="assets/img/logo.svg" alt="" class="img-fluid logo-img" /> UX~UI</a>
             </h1>
             <!-- Uncomment below if you prefer to use an image logo -->
             <nav id="navbar" class="navbar">
@@ -80,14 +82,18 @@
         <div class="overlay-itro"></div>
         <div class="hero-content display-table">
             <div class="table-cell">
-                <div class="container">
+                <div class="container hero-wrap">
                     <!--<p class="display-6 color-d">Hello, world!</p>-->
                     <h1 class="hero-title mb-4">I'm Syed Azam</h1>
                     <p class="hero-subtitle">
                         <span class="typed" data-typed-items="Designer, Developer, Photographer"></span>
+                        
                     </p>
+
+                    
                     <!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p> -->
                 </div>
+                
             </div>
         </div>
     </div>
@@ -180,8 +186,8 @@
                         </div>
                     </div>
                 </div>
-                <!-- <div class="row">
-                    <div class="col-md-4">
+                <div class="row port-wrap">
+                    <div class="col-md-4 port-list">
                         <div class="work-box">
                             <a href="assets/img/work-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
                                 <div class="work-img">
@@ -191,7 +197,7 @@
 
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 port-list">
                         <div class="work-box">
                             <a href="assets/img/work-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
                                 <div class="work-img">
@@ -201,7 +207,7 @@
 
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 port-list">
                         <div class="work-box">
                             <a href="assets/img/work-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
                                 <div class="work-img">
@@ -211,7 +217,7 @@
 
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 port-list">
                         <div class="work-box">
                             <a href="assets/img/work-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
                                 <div class="work-img">
@@ -221,7 +227,7 @@
 
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 port-list">
                         <div class="work-box">
                             <a href="assets/img/work-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
                                 <div class="work-img">
@@ -231,7 +237,7 @@
 
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 port-list">
                         <div class="work-box">
                             <a href="assets/img/work-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
                                 <div class="work-img">
@@ -239,7 +245,7 @@
                                 </div>
                             </a>
                         </div>
-                    </div> -->
+                    </div>
             </div>
             </div>
         </section>
@@ -281,7 +287,7 @@
             </div>
         </div>
     </footer>
-    <div id="preloader"></div>
+    <!-- <div id="preloader"></div> -->
     <a href="#" class="back-to-top d-flex align-items-center justify-content-center">
         <i class="bi bi-arrow-up-short"></i>
     </a>
@@ -292,6 +298,109 @@
     <script src="assets/vendor/typed.js/typed.min.js"></script>
     <script src="assets/vendor/php-email-form/validate.js"></script>
     <script src="assets/js/main.js"></script>
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/Flip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/Observer.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/ScrollToPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/Draggable.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/EaselPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/MotionPathPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/PixiPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/TextPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/EasePack.min.js"></script>
+
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+        var tl = gsap.timeline();
+
+        /* Progress bar starts */
+        gsap.to('progress', {
+            start: 0,
+            end: 'max',
+            value: 100,
+            ease: 'none',
+            scrollTrigger: { scrub: 0.3 }
+        });
+        /* Progress bar ends */
+
+        /* Portfolio starts */
+        gsap.set(".port-list", {y:200, opacity:0});
+        let stagger = 0.3;
+
+        ScrollTrigger.batch(".port-wrap", {
+            start: "top center",
+            markers: false,
+            onEnter: (elements) => {
+                elements.forEach((feedBlock, i) => {
+                const figure = feedBlock.querySelectorAll(".port-list");
+                gsap.to([figure], {y: 0, opacity: 1, overwrite: true, duration: 0.7, stagger: 0.1, delay: i * stagger}) 
+                });
+            },
+            onLeaveBack: (elements) => {
+                elements.forEach((feedBlock, i) => {
+                const figure = feedBlock.querySelectorAll(".port-list");
+                gsap.to([figure], {y: 200, opacity: 0, overwrite: true, duration: 0.7, stagger: 0.1, delay: i * stagger});
+                });
+            }
+        })
+        /* Portfolio ends */
+
+        gsap.defaults({
+            ease: "power1.inOut",
+        })
+        gsap.to(".logo", {
+            x: 0,
+            duration: 1,
+            opacity: 1
+        });
+        gsap.to(".logo-img", {
+            rotation: 360,
+            duration: 1.5,
+            opacity: 1,
+            repeat: 2,
+            repeatDelay: 1,
+            yoyo: true 
+        });
+
+        gsap.to(".navbar", {
+            x: 0,
+            duration: 1.5,
+            opacity: 1
+
+        });
+
+        gsap.to(".hero-wrap", {
+            y: 0,
+            duration: 2,
+            opacity: 1, 
+            scale:1 
+        });
+
+        /* gsap.to(".hero.bg-image", {
+            scale: 1,
+            duration: 2,
+            opacity: 1,
+            delay: 0.2,
+        }); */
+
+
+ 
+        /* Cursor */
+        gsap.set(".ball", {xPercent: -50, yPercent: -50});
+
+        let xTo = gsap.quickTo(".ball", "x", {duration: 0.6, ease: "power3"}),
+            yTo = gsap.quickTo(".ball", "y", {duration: 0.6, ease: "power3"});
+
+        window.addEventListener("mousemove", e => {
+            xTo(e.pageX);
+            yTo(e.pageY);
+        });
+        /* Cursor ends */
+
+    </script>
 
 </body>
 

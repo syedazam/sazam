@@ -499,6 +499,8 @@ a:hover {
     padding: 0;
     font-weight: 600;
     letter-spacing: 1px;
+    transform: translate(-200px, 0px);
+    opacity: 0;
 }
 
 #header .logo a {
@@ -526,6 +528,8 @@ a:hover {
 
 .navbar {
     padding: 0;
+    transform: translate(200px, 0px);
+    opacity: 0;
 }
 
 .navbar ul {
@@ -776,6 +780,22 @@ a:hover {
 }
 
 
+/* Ball  */
+
+
+.ball {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border: 3px solid dodgerblue;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9999;
+  }
+
+
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
@@ -800,6 +820,12 @@ a:hover {
     height: 100%;
     width: 100%;
     opacity: 0.9;
+}
+
+.hero .hero-wrap {    
+    transform: translate(0, 200px);
+    opacity: 0; 
+    scale: 0;
 }
 
 .hero .hero-title {
@@ -1562,3 +1588,33 @@ footer .credits a {
         text-shadow: 0 0 20px #000, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
     }
 }
+
+.port-list {
+   /*  transform: translate(0px, 0px); */
+}
+
+/* Progress starts */
+progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 6px;
+    border: none;
+    background: transparent;
+    z-index: 9999;
+  }
+  progress::-webkit-progress-bar {
+    background: transparent;
+  }
+  progress::-webkit-progress-value {
+    background: linear-gradient(to left, #db38b5,#01b3e3,#25ce7b,#fdc741,#ff6b01,#fc4236);
+    background-attachment: fixed;
+  }
+  progress::-moz-progress-bar {
+    background: linear-gradient(to left, #db38b5,#01b3e3,#25ce7b,#fdc741,#ff6b01,#fc4236);
+    background-attachment: fixed;
+  }
+/* Progress ends */
